@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Map Basics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<!--
+		To apply styles to the certain slides
+		set slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+			margin:65px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#Cover p {
+			margin:10px 0 0;
+			text-align:center;
+			color:#FFF;
+			font-style:italic;
+			font-size:20px;
+			}
+			#Cover p a {
+				color:#FFF;
+			}
+			#Cover img {
+				width: 1024px;
+			}
+			
+		#Picture h2 {
+			color:#FFF;
+			}
+		#SeeMore h2 {
+			font-size:100px
+			}
+		#SeeMore img {
+			width:0.72em;
+			height:0.72em;
+			}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Map Basics</h1>
+		<p>An introduction of Map Basics for Noob</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Map Basics For Noob</h2>
+		<p>By <a href="http://www.intridea.com/about/team/andy-wang">Andy Wang</a></p>
+		<img src="pictures/cover.png" alt="">
+	</div></section>
+	<section class="slide shout"><div>
+		<h2>Newbie?</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Core Concepts</h2>
+		<ol>
+			<li>GIS</li>
+			<li>Map projections</li>
+			<li>Coordinate systems</li>
+			<li>Zoom levels</li>
+			<li>Layers</li>
+			<li>Spatial databases</li>
+		</ol>
+	</div></section>
+	<section class="slide"><div>
+		<h2>1. Geographic Information System</h2>
+		<p class='note'>“GIS refers to any system dealing with the recording, analysis, or display of data that is related to a location.”</p>
+	  <p>
+		  <a href='http://www.uwyo.edu/smtc/edparc/_docs/_arcview_tips/basicgisconcepts.pdf'>http://www.uwyo.edu/smtc/edparc/_docs/_arcview_tips/basicgisconcepts.pdf</a><br />
+		</p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Sample project: </h2>
+		<img src="pictures/heat_map.png" alt="" width="600px">
+		<a href='http://globalreligiousfutures.org/' style="font-size:12px;">http://globalreligiousfutures.org/</a>
+	</div></section>
+	<section class="slide"><div>
+		<h2>2. Map projections</h2>
+		<p class="note">“Projections refer to the method used for representing a three-dimensional object like the Earth on a two-dimensional surface like a sheet of paper or a computer screen.”</p>
+		<p>
+		  <a href='https://github.com/mbostock/d3/wiki/Geo-Projections'>https://github.com/mbostock/d3/wiki/Geo-Projections</a><br />
+		  <a href='http://en.wikipedia.org/wiki/Map_projection'>http://en.wikipedia.org/wiki/Map_projection</a>
+		  <a href='http://www.jasondavies.com/maps/transition/'>http://www.jasondavies.com/maps/transition/</a>
+		</p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Mercator projection</h2>
+		<p class="note">“A transverse Mercator projection is mathematically the same as a standard Mercator, but oriented around a different axis.”</p>
+    <img src="pictures/map_traverse_mercator.png" alt="" >
+	</div></section>
+	<section class="slide"><div>
+		<h2>Robinson projection</h2>
+		<p class="note">“adopted by <a href='http://en.wikipedia.org/wiki/National_Geographic_Magazine'>National Geographic Magazine</a> in 1988 but abandoned by them in about 1997 for the <a href='http://en.wikipedia.org/wiki/Winkel_Tripel_projection'>Winkel Tripel</a>.”</p>
+		<img src="pictures/map_robinson.png" alt="" >
+	</div></section>
+	<section class="slide"><div>
+		<h2>3. Coordinate systems</h2>
+		<p class="note">Projections refer to the method used for representing a three-dimensional object like the Earth on a two-dimensional surface like a sheet of paper or a computer screen.</p>
+		<p><a href='http://en.wikipedia.org/wiki/Geographic_coordinate_system'>http://en.wikipedia.org/wiki/Geographic_coordinate_system</a></p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Latitude and Longitude of the Earth</h2>
+		<img src="pictures/lonlat.png" alt="" >
+	</div></section>
+	<section class="slide"><div>
+		<h2>4. Zoom levels</h2>
+		<p class="note">“A zoom level is a predefined scale at which a map is rendered. OpenStreetMap, Google Maps, and most other online maps zoom levels are scaled such that the entire world fills a 256x256 pixel tile at zoom level 0, and doubles in width & height at each subsequent zoom level.”</p>
+		<p><a href='http://wiki.openstreetmap.org/wiki/Zoom_levels'>http://wiki.openstreetmap.org/wiki/Zoom_levels</a></p>
+	</div></section>
+	<section class="slide"><div>
+		<img src="pictures/zoom_level.png" alt="" >
+	</div></section>
+	<section class="slide"><div>
+		<h2>5. Layers</h2>
+		<p class="note">“Data on different themes are stored in separate “layers”. As each layer is geo-referenced layers from different sources can easily be integrated using location. Layer can be used to build up complex models of the real world from widely disparate sources.”</p>
+   <p><a href='https://www.google.com/search?q=gis+layers&newwindow=1&sa=X&tbm=isch&tbo=u&source=univ&ei=0v5zUZ2TCuiwiQetg4GgDQ&ved=0CC8QsAQ&biw=1364&bih=691'>see some layer related charts.</a></p> 
+	</div></section>
+	<section class="slide"><div>
+		<img src="pictures/layer01.jpg" alt="" height='500px'>
+	</div></section>
+	<section class="slide"><div>
+		<img src="pictures/layer02.jpg" alt="" height='500px'>
+	</div></section>
+	<section class="slide"><div>
+		<h2>6. Spatial databases</h2>
+		<p class="note">“A spatial database is a database that is optimized to store and query data that is related to objects in space, including points, lines and polygons.”</p>
+		<p>
+		  <a href='http://en.wikipedia.org/wiki/Spatial_database'>http://en.wikipedia.org/wiki/Spatial_database</a><br />
+		  <a href='http://www.spatial.cs.umn.edu/Book/slides/ch1revised.ppt'>http://www.spatial.cs.umn.edu/Book/slides/ch1revised.ppt</a>
+		</p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Postgres + Postgis</h2>
+		<img src="pictures/postgres_postgis.png" alt="" >
+		<a href="https://gist.github.com/yorzi/4345022">https://gist.github.com/yorzi/4345022</a>
+	</div></section>
+	<section class="slide shout"><div>
+		<h2>Two Quick Demos</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Mapbox/TileJson + Wax + OpenLayer</h2>
+		<img src="pictures/postgres_postgis.png" alt="" >
+		<a href="https://gist.github.com/yorzi/4345022">https://gist.github.com/yorzi/4345022</a>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Mapbox + D3</h2>
+		<img src="pictures/postgres_postgis.png" alt="" >
+		<a href="http://www.schneidy.com/Tutorials/MapsTutorial.html">http://www.schneidy.com/Tutorials/MapsTutorial.html</a>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Resources</h2>
+		<p>
+		  <a href='http://www.esri.com/'>http://www.esri.com/</a><br />
+		  <a href='http://lib.stanford.edu/gis/'>http://lib.stanford.edu/gis/</a><br />
+		  <a href='http://www.gislounge.com/gis-essentials/'>http://www.gislounge.com/gis-essentials/</a>
+		</p>
+	</div></section>
+	<section class="slide shout" id="SeeMore"><div>
+		<h2><a href="https://github.com/shower/shower/">Thank You!</a></h2>
+	</div></section>
+
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+</body>
+</html>
